@@ -2,7 +2,7 @@
 
 WordPress Starter theme that uses [@wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/) for workflow.
 
-** Theme Features **
+**Theme Features**
 
 * CSS (SCSS) compiling
 * Javascript (React) compiling
@@ -10,7 +10,7 @@ WordPress Starter theme that uses [@wordpress/scripts](https://developer.wordpre
 * SVG Icons with helper function for including icons
 * Basic PHP templates & partials
 
-** You can always customize the theme for your project by: **
+**You can always customize the theme for your project by:**
 
 * Change the theme directory name to your custom theme name.
 * Change the theme name in style.css
