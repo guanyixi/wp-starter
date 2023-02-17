@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font;
+    margin:0;
+    overflow-x: hidden;
+}
+
+
+
+svg.icon{
+    width:24px;
+    path{
+        fill:#5d5d5d;
+    }
+}
+
+header, footer{
+    ul, ol, li{
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
