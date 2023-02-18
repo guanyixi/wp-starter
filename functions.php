@@ -22,7 +22,7 @@ add_action( 'after_setup_theme', 'themename_theme_support' );
 
 
 /**
- * Enqueue Styles
+ * Enqueue Styles and Scripts for both Frontend and Editor
  */
 if ( ! function_exists( 'themename_assets' ) ) {
 	function themename_assets(){
@@ -30,7 +30,16 @@ if ( ! function_exists( 'themename_assets' ) ) {
 		wp_enqueue_script( 'themename_script_index', get_template_directory_uri().'/build/index.js', array('wp-element'), filemtime(get_template_directory().'/build/index.js'), true );
 	}
 }
-add_action('wp_enqueue_scripts', 'themename_assets');
+add_action('enqueue_block_assets', 'themename_assets');
+
+
+/**
+ * Register Custom Blocks
+ */
+function register_custom_blocks_init() {
+	register_block_type(get_template_directory() . '/build/blocks/example-block');
+}
+add_action( 'init', 'register_custom_blocks_init' );
 
 
 /**
@@ -38,6 +47,7 @@ add_action('wp_enqueue_scripts', 'themename_assets');
  */
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 
 /**
  * Remove Gutenberg Block Library CSS from loading on the frontend
