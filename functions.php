@@ -34,15 +34,6 @@ add_action('enqueue_block_assets', 'themename_assets');
 
 
 /**
- * Register Custom Blocks
- */
-function register_custom_blocks_init() {
-	register_block_type(get_template_directory() . '/build/blocks/example-block');
-}
-add_action( 'init', 'register_custom_blocks_init' );
-
-
-/**
  * Stop loading emoji JS/CSS files on frontend
  */
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );

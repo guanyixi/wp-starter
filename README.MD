@@ -6,7 +6,6 @@ WordPress Starter theme that uses [@wordpress/scripts](https://developer.wordpre
 
 * CSS (SCSS) compiling
 * Javascript (Class & React) compiling
-* Multiple custom Gutenberg blocks
 * Local web fonts with preload
 * SVG Icons with helper function for including icons
 * Basic PHP templates & partials
