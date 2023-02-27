@@ -1,1 +1,14 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/index.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/* used only in the editor */
+#editor .editor-styles-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
+html :where(.wp-block) {
+  max-width: 1280px;
+}
+
+/*# sourceMappingURL=index.css.map*/

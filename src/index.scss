@@ -1,1 +1,11 @@
 /* used only in the editor */
+#editor{
+    .editor-styles-wrapper{
+        padding-left:30px;
+        padding-right:30px;
+    }
+}
+
+html :where(.wp-block){
+    max-width:1280px;
+}

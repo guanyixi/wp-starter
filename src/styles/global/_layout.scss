@@ -4,20 +4,25 @@ header, footer{
     padding:20px 0;
     .menu{
         display: flex;
+        flex-wrap: wrap;
         .menu-item{
             margin:0 20px;
+            a{
+                font-weight: normal;
+            }
         }
     }
 }
 
 header{
     border-bottom: 1px solid #eee;
+    .menu-main-nav-container{
+        display: flex;
+        align-items: center;
+    }
 }
 
 footer{
+    padding:16px 0;
     border-top: 1px solid #eee;
-}
-
-main{
-    padding:30px 0;
 }

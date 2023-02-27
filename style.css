@@ -3,7 +3,7 @@ Theme Name: WP Starter
 Theme URI: https://github.com/guanyixi/wp-starter
 Author: Brooklyn Guan
 Author URI: https://brooklynguan.com
-Description: WordPress starter theme with basic PHP templates and CSS and Javascript compiling through @wordpress/scripts. It also includes examples of importing web fonts for better performance, using svg icons with PHP helper function.
+Description: WordPress starter theme with basic PHP templates, assets enqueue/dequeue, theme.json file, and @wordpress/scripts for compiling. It also includes examples of importing web fonts for better performance and helper function for importing svg icons.
 Requires at least: 5.9
 Tested up to: 6.1
 Requires PHP: 5.6

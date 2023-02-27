@@ -1,1 +1,189 @@
-@font-face{font-display:swap;font-family:Open Sans;font-style:normal;font-weight:400;src:url(fonts/open-sans-v34-latin-regular.a1535f45.woff2) format("woff2"),url(fonts/open-sans-v34-latin-regular.7958f4e4.woff) format("woff")}@font-face{font-display:swap;font-family:Open Sans;font-style:italic;font-weight:400;src:url(fonts/open-sans-v34-latin-italic.80a88fd1.woff2) format("woff2"),url(fonts/open-sans-v34-latin-italic.acfa2365.woff) format("woff")}@font-face{font-display:swap;font-family:Open Sans;font-style:normal;font-weight:700;src:url(fonts/open-sans-v34-latin-700.b245bc85.woff2) format("woff2"),url(fonts/open-sans-v34-latin-700.2867e720.woff) format("woff")}*{box-sizing:border-box}body{font-family:Open Sans,sans-serif;margin:0;overflow-x:hidden}svg.icon{width:24px}svg.icon path{fill:#5d5d5d}footer li,footer ol,footer ul,header li,header ol,header ul{list-style:none;margin:0;padding:0}footer a,header a{color:#000;text-decoration:none}.container{margin-left:auto;margin-right:auto;max-width:1200px}footer,header{display:flex;justify-content:space-between;padding:20px 0}footer .menu,header .menu{display:flex}footer .menu .menu-item,header .menu .menu-item{margin:0 20px}header{border-bottom:1px solid #eee}footer{border-top:1px solid #eee}main{padding:30px 0}
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/* used both on the front-end and in the editor */
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/open-sans-v34-latin-regular.a1535f45.woff2) format("woff2"), url(fonts/open-sans-v34-latin-regular.7958f4e4.woff) format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(fonts/open-sans-v34-latin-italic.80a88fd1.woff2) format("woff2"), url(fonts/open-sans-v34-latin-italic.acfa2365.woff) format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/open-sans-v34-latin-700.b245bc85.woff2) format("woff2"), url(fonts/open-sans-v34-latin-700.2867e720.woff) format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #262b2e;
+}
+
+a {
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #405a6d;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg.icon {
+  width: 24px;
+}
+svg.icon path {
+  fill: #5d5d5d;
+}
+
+header ul, header ol, header li, footer ul, footer ol, footer li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header a, footer a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Containers */
+.container-sm, .container-md, .container, .container-lg, .container-xl, .container-fluid {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .container-sm, .container-md, .container, .container-lg, .container-xl {
+    max-width: 700px !important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-md, .container, .container-lg, .container-xl {
+    max-width: 900px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container, .container-lg, .container-xl {
+    max-width: 1120px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-lg, .container-xl {
+    max-width: 1240px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container-xl {
+    max-width: 1480px !important;
+  }
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+header .menu, footer .menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .menu .menu-item, footer .menu .menu-item {
+  margin: 0 20px;
+}
+header .menu .menu-item a, footer .menu .menu-item a {
+  font-weight: normal;
+}
+
+header {
+  border-bottom: 1px solid #eee;
+}
+header .menu-main-nav-container {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  padding: 16px 0;
+  border-top: 1px solid #eee;
+}
+
+.wp-block-latest-posts {
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wp-block-latest-posts li {
+  list-style: none;
+  width: 300px;
+  margin: 12px;
+  overflow: hidden;
+}
+.wp-block-latest-posts li > a {
+  font-size: 20px;
+  display: block;
+  margin: 16px 24px 0;
+}
+.wp-block-latest-posts li time {
+  display: block;
+  margin: 8px 24px 30px;
+}
+.wp-block-latest-posts li .wp-block-latest-posts__post-excerpt {
+  margin: 12px 24px 24px;
+}
+
+.wp-block-media-text {
+  padding: 0 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.wp-block-media-text .wp-block-media-text__content {
+  padding: 0;
+}
+.wp-block-media-text > *:first-child {
+  margin: 0 80px 0 0;
+}
+@media (max-width: 1023px) {
+  .wp-block-media-text > *:first-child {
+    margin: 0 0 30px;
+  }
+  .wp-block-media-text.is-stacked-on-mobile {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

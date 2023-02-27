@@ -6,9 +6,25 @@ body{
     font-family: $font;
     margin:0;
     overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $dark;
 }
 
+a{
+    transition: all 0.3s ease;
+    text-decoration: underline;
+    font-weight: bold;
+    color: $primary;
+    &:hover{
+        text-decoration: none;
+    }
+}
 
+img{
+    max-width:100%;
+    height:auto;
+}
 
 svg.icon{
     width:24px;

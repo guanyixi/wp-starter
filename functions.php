@@ -22,15 +22,48 @@ add_action( 'after_setup_theme', 'themename_theme_support' );
 
 
 /**
- * Enqueue Styles and Scripts for both Frontend and Editor
+ * Enqueue scripts for both frontend and editor
  */
 if ( ! function_exists( 'themename_assets' ) ) {
 	function themename_assets(){
-		wp_enqueue_style( 'themename_style_index', get_template_directory_uri().'/build/style-index.css', [], filemtime(get_template_directory().'/build/style-index.css'), 'All' );
-		wp_enqueue_script( 'themename_script_index', get_template_directory_uri().'/build/index.js', array('wp-element'), filemtime(get_template_directory().'/build/index.js'), true );
+
+		wp_enqueue_style( 
+			'themename_style_index', 
+			get_template_directory_uri().'/build/style-index.css', 
+			[], 
+			filemtime(get_template_directory().'/build/style-index.css'), 
+			'All' 
+		);
+
+		// Scripts without dependency
+		wp_enqueue_script( 
+			'themename_script_index', 
+			get_template_directory_uri().'/build/index.js', 
+			array(), 
+			filemtime(get_template_directory().'/build/index.js'), 
+			true 
+		);
+		
 	}
 }
 add_action('enqueue_block_assets', 'themename_assets');
+
+
+/**
+ * Enqueue scripts only for editor
+ */
+if ( ! function_exists( 'themename_editor_assets' ) ) {
+	function themename_editor_assets(){
+		wp_enqueue_style( 
+			'themename_editor_index', 
+			get_template_directory_uri().'/build/index.css', 
+			[], 
+			filemtime(get_template_directory().'/build/index.css'), 
+			'All' 
+		);
+	}
+}
+add_action('enqueue_block_editor_assets', 'themename_editor_assets');
 
 
 /**
@@ -41,15 +74,16 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 
 /**
- * Remove Gutenberg Block Library CSS from loading on the frontend
+ * Remove assets from frontend
  */
-function smartwp_remove_wp_block_library_css(){
+function themename_remove_wp_block_library_css(){
 	wp_dequeue_style( 'classic-theme-styles' );
-	wp_dequeue_style( 'wp-block-library' );
 	wp_dequeue_style( 'wp-block-library-theme' );
-	//wp_dequeue_style( 'wc-blocks-style' ); // Remove WooCommerce block CSS
+	// wp_dequeue_style( 'wp-block-library' ); // block basic styles for front end
+	// wp_dequeue_style( 'global-styles' );  // theme.json settings
+	// wp_dequeue_style( 'wc-blocks-style' ); // Remove WooCommerce block CSS
 } 
-add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
+add_action( 'wp_enqueue_scripts', 'themename_remove_wp_block_library_css', 100 );
 
 
 /**

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;AAEI;EACI;EACA;AAAR;;AAIA;EACI;AADJ,C","sources":["webpack://themename/./src/index.scss"],"sourcesContent":["/* used only in the editor */\n#editor{\n    .editor-styles-wrapper{\n        padding-left:30px;\n        padding-right:30px;\n    }\n}\n\nhtml :where(.wp-block){\n    max-width:1280px;\n}"],"names":[],"sourceRoot":""}
