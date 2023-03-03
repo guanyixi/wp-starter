@@ -39,7 +39,7 @@ if ( ! function_exists( 'themename_assets' ) ) {
 		wp_enqueue_script( 
 			'themename_script_index', 
 			get_template_directory_uri().'/build/index.js', 
-			array(), 
+			array('wp-element'), 
 			filemtime(get_template_directory().'/build/index.js'), 
 			true 
 		);
