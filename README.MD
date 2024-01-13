@@ -26,6 +26,11 @@
 * Search 'themename' within the theme directory, and replace it with the new theme name.
 
 
+## Clone theme to your WordPress website
+
+* git clone {https://github.com/guanyixi/wp-starter.git}
+
+
 ## Assets Compiling
 
 This theme uses [@wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/) for compiling assets.
