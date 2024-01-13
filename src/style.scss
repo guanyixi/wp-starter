@@ -30,14 +30,12 @@
 
 // Global
 @import "styles/global/vars.scss";
-@import "styles/global/core.scss";
+@import "styles/global/elements.scss";
 @import "styles/global/util.scss";
 @import "styles/global/form.scss";
 @import "styles/global/layout.scss";
 
 // Blocks
-@import "styles/blocks/latest-posts.scss";
-@import "styles/blocks/media-text.scss";
 
 // Templates
 @import "styles/templates/front-page.scss";

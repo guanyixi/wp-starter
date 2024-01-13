@@ -39,3 +39,7 @@ First install: run `npm install` under the theme directory to install the npm pa
 
 * start: `npm start` - watch
 * build: `npm run build` - minify 
+
+## Google fonts helper
+
+* Use [google-webfonts-helper](https://gwfh.mranftl.com/fonts) to replace with the choice of your font.

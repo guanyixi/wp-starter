@@ -2,13 +2,16 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/index.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
 /* used only in the editor */
-#editor .editor-styles-wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
+.edit-post-visual-editor {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  background-color: white !important;
 }
 
-html :where(.wp-block) {
-  max-width: 1280px;
+body.wp-admin.post-type-post .edit-post-visual-editor .edit-post-visual-editor__content-area {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
 }
 
 /*# sourceMappingURL=index.css.map*/

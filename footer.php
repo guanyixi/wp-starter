@@ -1,6 +1,6 @@
         </main>
         <footer>
-            <div>© <?php echo the_date('Y'); ?> company.com</div>
+            <div>© <?php echo date('Y'); ?> company.com</div>
             <div>
                 <?php wp_nav_menu(array(
                     'theme_location'=>'footer_menu'
