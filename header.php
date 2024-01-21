@@ -7,13 +7,13 @@
     <!-- Optional Performance Improvement: Preload the fonts that appear at the top of the page to avoid Large Layout Shifts -->
     <link rel="preload" href=<?php echo get_template_directory_uri() . "/assets/fonts/open-sans-v34-latin-regular.woff2"; ?> as="font" type="font/woff2" crossorigin>
     <link rel="preload" href=<?php echo get_template_directory_uri() . "/assets/fonts/open-sans-v34-latin-700.woff2"; ?> as="font" type="font/woff2" crossorigin>
-    <title>Site Title</title>
+    <title></title>
     <?php wp_head(); ?> 
 </head>
 <body <?php body_class(); ?>>
     <div id="app" class="container">
         <header>
-            <a href="/" class="site-title">Company Name</a>
+            <a href="/" class="site-title"><img src="<?php echo get_template_directory_uri() . '/assets/img/logo-dark.svg' ?>"/></a>
             <?php wp_nav_menu(array(
                 'theme_location'=>'primary_menu'
             )); ?>
